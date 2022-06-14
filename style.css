@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+/* IMPORT DA FAMILY */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* IMPORT DA FAMILY */
+body{
+  background-color: #101010 ;
+}
+/* MY CONTACT */
+h1{
+  text-align: center;
+  color: white;
+  font-family: 'Poppins';
+  font-style: normal;
+font-weight: 700;
+font-size: 64px;
+
+}
+/* FORMULÁRIO */
+.form{
+  padding: 30px;
+  margin: auto;
+  width: 550px;
+  height: 500.06px;
+  background-color: #7353BA;
+  color: white;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  
+}
+input{
+  display: block;
+  width: 492px;
+  padding: 20px;
+  border-radius: 14px;
+  border: none;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+button{
+  width: 492px;
+  height: 78.61px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 14px;
+  background-color: #3D286B;
+  color: white;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
