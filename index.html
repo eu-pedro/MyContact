@@ -8,29 +8,39 @@
   <title>My Contact</title>
 </head>
 <body>
-    <section>
+    <section id="app">
         <div>
-          <h1>My Contact</h1>
+          <h1><span>My</span>Contact</h1>
         </div>
       
         <!-- FORMULÁRIO -->
         <div class="form">
           <form action="">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" v-model="nome"    placeholder="Digite seu nome">
+            <div class="erro-nome">
+              {{ msg1 }}
+            </div>
             <label for="email">E-mail:</label>
-            <input type="text" id="email">
+            <input type="text" id="email" v-model="email" placeholder="example123@gmail.com">
+            <div class="erro-email">
+              {{ msg2 }}
+            </div>
             <label for="whats">Whatsapp:</label>
-            <input type="text" id="whats">
+            <input type="text" id="whats" placeholder="(DDD) xxxxx-xxxx">
+            <div class="erro-whats">
+              {{ msg3 }}
+            </div>
+           
 
-            <button>Enviar</button>
+            <button v-on:click.prevent="verificar()">Enviar</button>
           </form>
 
         </div>
         
     </section>
 
-
-
+    <script src="https://unpkg.com/vue@3"></script>
+      <script src="script.js"></script>
 </body>
 </html>
